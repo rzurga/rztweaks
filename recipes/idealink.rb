@@ -7,8 +7,8 @@
 # All rights reserved - Do Not Redistribute
 #
 
-link "/usr/sbin/idea" do
+link "/usr/bin/idea" do
   link_type :symbolic
   to "/opt/idea/bin/idea.sh"
-  not_if { ::File.directory?("/usr/sbin/idea") }
+  not_if { ::File.directory?("/usr/bin/idea") }
 end
